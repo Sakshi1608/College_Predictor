@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Student form</title>
+<style type="text/css">
+body {
+margin: 0;
+background : url("{{ url_for('static', filename='img.jpeg') }}");
+background-size:cover;
+}
+h1 {
+font-family: cursive;
+background-color: #000;
+color:white;
+text-align: center;
+padding: 20px;
+}
+div {
+width: 400px;
+margin: 10px auto;
+box-shadow: 0px 1px 10px #404040;
+background: rgba(255, 255, 255, 0.2);
+border-color:double;
+border-size:100px;
+border-radius: 15px 50px;
+padding-bottom: 10px;
+}
+a {
+padding: 30px;
+margin: 30px;
+border-radius: 10px;
+background-color: black;
+text-decoration: none;
+display: inline-block;
+color: #fff;
+font-family: cursive;
+}
+a:hover {
+background-color: #cccccc;
+transition: all 0.3s
+}
+input[type=Submit]{
+background-color:black ;
+border: none;
+color: white;
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+font-family: cursive;
+}
+</style>
+</head>
+<body>
+<form action="{{ url_for('predict')}}" method="post">
+<h1>COLLEGE PREDICTOR</h1>
+<div align="center">
+<a>City <select name="city">
+    <option value="">City</option>
+    <option value="0">BAGALKOT</option>
+    <option value="1">BANGALORE</option>
+    <option value="2">BELGAUM</option>
+    <option value="3">BELLARY</option>
+    <option value="4">CHIKKABALLAPUR</option>
+    <option value="5">CHITRADURGA</option>
+    <option value="6">DAVANGERE</option>
+    <option value="7">DHARWAD</option>
+    <option value="8">GULBARGA</option>
+    <option value="9">HASSAN</option>
+    <option value="10">HUBLI</option>
+    <option value="11">HALIYAL</option>
+    <option value="12">KARKALA</option>
+    <option value="13">MANDYA</option>
+    <option value="14">MANGALORE</option>
+    <option value="15">MOODBIDRI</option>
+    <option value="16">MYSORE</option>
+    <option value="17">SHIMOGA</option>
+    <option value="18">TUMKUR</option>
+  </select></a></br>
+<a>Category <select name="category">
+    <option value="">Category</option>
+    <option value="0">CHRISTIAN</option>
+    <option value="1">GENERAL MERIT</option>
+    <option value="2">HYDERABAD-KARNATAKA-REGION</option>
+    <option value="3">TULU</option>
+  </select> </a></br>
+
+<a>Branch <select name="branch">
+    <option value="">Branch</option>
+    <option value="0">AER</option>
+    <option value="1">ARO</option>
+    <option value="2">ASE</option>
+    <option value="3">AUE</option>
+    <option value="4">BIO</option>
+    <option value="5">BME</option>
+    <option value="6">CHE</option>
+    <option value="7">CSE</option>
+    <option value="8">CSSC</option>
+    <option value="9">CTM</option>
+    <option value="10">CVL</option>
+    <option value="11">ECE</option>
+    <option value="12">ECSC</option>
+    <option value="13">EEE</option>
+    <option value="14">EIE</option>
+    <option value="15">IEM</option>
+    <option value="16">INS</option>
+    <option value="17">ITE</option>
+    <option value="18">MCH</option>
+    <option value="19">MEE</option>
+    <option value="20">MTE</option>
+    <option value="21">NAN</option>
+    <option value="22">TEL</option>
+    <option value="23">TEX</option>
+  
+  </select></a></br>
+<a>Rank <input type="text" name ="rank"></a></br>
+<input type="Submit" value="Go">
+</div>
+</form>
+</div>
+</body>
+</html>
