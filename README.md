@@ -23,22 +23,24 @@ It uses a trained Random Forest classifier on real historical data and serves pr
 ## ⚙️ How to Run Locally
 
 ### 1. Clone the Repository
-
 ```bash
-git clone https://github.com/Sakshi1608/College_Predictor.git
-cd College_Predictor
+    git clone https://github.com/Sakshi1608/College_Predictor.git
+    cd College_Predictor
+```
 
 ### 2. Install requirements
 ```bash 
 pip install flask pandas numpy scikit-learn
-
+```
 ### 3. Train the Model
 ```bash
 python model.py
-
+```
 This generates model.pkl using the provided dataset.
 
 ### 4. Run the Flask App
 ```bash
 python app.py
+```
 Visit http://127.0.0.1:5000 in your browser to use the predictor.
+    
